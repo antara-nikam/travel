@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelVista - Explore the World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="logo">TravelVista</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#why-choose">Why Us</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="auth-btn" onclick="openModal('login')">Login / Signup</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Explore the World with TravelVista</h1>
+            <p>Your adventure starts here. Discover amazing destinations and unforgettable experiences.</p>
+            <button class="cta-btn">Start Your Journey</button>
+        </div>
+    </section>
+
+    <!-- Popular Destinations -->
+    <section id="destinations">
+        <div class="container">
+            <h2 class="section-title">Popular Destinations</h2>
+            <div class="destinations">
+                <div class="destination-card" data-aos="fade-up">
+                    <img src="https://source.unsplash.com/400x300/?paris" alt="Paris">
+                    <h3>Paris, France</h3>
+                    <p>Experience the romance of the Eiffel Tower and charming streets.</p>
+                    <a href="#" class="view-details">View Details</a>
+                </div>
+                <div class="destination-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://source.unsplash.com/400x300/?tokyo" alt="Tokyo">
+                    <h3>Tokyo, Japan</h3>
+                    <p>Immerse yourself in the vibrant culture and modern wonders.</p>
+                    <a href="#" class="view-details">View Details</a>
+                </div>
+                <div class="destination-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://source.unsplash.com/400x300/?bali" alt="Bali">
+                    <h3>Bali, Indonesia</h3>
+                    <p>Relax on pristine beaches and explore lush landscapes.</p>
+                    <a href="#" class="view-details">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Packages -->
+    <section id="packages">
+        <div class="container">
+            <h2 class="section-title">Travel Packages</h2>
+            <div class="packages">
+                <div class="package-card" data-aos="fade-in">
+                    <h3>European Adventure</h3>
+                    <div class="price">Rs.1,17,000</div>
+                    <div class="duration">7 Days</div>
+                    <ul class="features">
+                        <li>Flights included</li>
+                        <li>Hotel stays</li>
+                        <li>Guided tours</li>
+                    </ul>
+                </div>
+                <div class="package-card" data-aos="fade-in" data-aos-delay="100">
+                    <h3>Asian Explorer</h3>
+                    <div class="price">Rs.90,000</div>
+                    <div class="duration">10 Days</div>
+                    <ul class="features">
+                        <li>Flights included</li>
+                        <li>Hotel stays</li>
+                        <li>Cultural experiences</li>
+                    </ul>
+                </div>
+                <div class="package-card" data-aos="fade-in" data-aos-delay="200">
+                    <h3>Tropical Paradise</h3>
+                    <div class="price">Rs.75,000</div>
+                    <div class="duration">5 Days</div>
+                    <ul class="features">
+                        <li>Flights included</li>
+                        <li>Resort stay</li>
+                        <li>Beach activities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-choose" class="why-choose">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <div class="features-grid">
+                <div class="feature" data-aos="fade-up">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>Affordable</h3>
+                    <p>Best prices for your dream vacations.</p>
+                </div>
+                <div class="feature" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Trusted</h3>
+                    <p>Thousands of satisfied travelers.</p>
+                </div>
+                <div class="feature" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Easy Booking</h3>
+                    <p>Simple and hassle-free reservations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonial-slider" id="testimonial-slider">
+                <div class="testimonial-card">
+                    <p>"Amazing experience! TravelVista made planning our trip so easy."</p>
+                    <h4>- John Doe</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Highly recommend! Great destinations and excellent service."</p>
+                    <h4>- Jane Smith</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Affordable and unforgettable."</p>
+                    <h4>- Mike Johnson</h4>
+                </div>
+            </div>
+            <div class="slider-dots" id="slider-dots">
+                <span class="dot active" onclick="showSlide(0)"></span>
+                <span class="dot" onclick="showSlide(1)"></span>
+                <span class="dot" onclick="showSlide(2)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Stay Updated</h2>
+            <div class="newsletter">
+                <input type="email" placeholder="Enter your email">
+                <button class="submit-btn">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>TravelVista</h3>
+                    <p>Your gateway to amazing adventures.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#why-choose">Why Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group password-toggle">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required>
+                    <i class="fas fa-eye" onclick="togglePassword('login-password')"></i>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="message" id="login-message"></div>
+            </form>
+            <div class="switch-form">
+                Don't have an account? <a onclick="switchForm('signup')">Sign up</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="signup-name">Name</label>
+                    <input type="text" id="signup-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" required>
+                </div>
+                <div class="form-group password-toggle">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" required>
+                    <i class="fas fa-eye" onclick="togglePassword('signup-password')"></i>
+                </div>
+                <div class="form-group password-toggle">
+                    <label for="signup-confirm">Confirm Password</label>
+                    <input type="password" id="signup-confirm" required>
+                    <i class="fas fa-eye" onclick="togglePassword('signup-confirm')"></i>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                <div class="message" id="signup-message"></div>
+            </form>
+            <div class="switch-form">
+                Already have an account? <a onclick="switchForm('login')">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
