@@ -1,9 +1,11 @@
 ##Project Overview
+
 This is a responsive travel and tourism website frontend built using HTML, CSS, and JavaScript.
 The project focuses on creating a clean, modern UI with medium-level animations and transitions.
 It includes a Login/Signup interface and smooth interactive elements suitable for an internship-level frontend project.
 
 ##Features
+
 UI Sections
 Hero section with call-to-action button
 Popular destinations cards with hover effects
@@ -24,12 +26,14 @@ Smooth scrolling for navigation
 Sticky navbar with scroll effect
 
 ##Technologies Used
+
 HTML5 – structure and layout
 CSS3 – styling, responsive design, and transitions
 JavaScript – interactivity and frontend validation
 AOS.js – scroll animations
 
 ##Project Structure
+
 travel-website/
 │
 ├── index.html           # Homepage
@@ -44,17 +48,13 @@ travel-website/
 └── aos/                 # AOS.js library files
 
 ##How to Use
+
 Clone the repository:
-
 git clone <repository-url>
-
-
 Open index.html in your browser to view the website.
-
 Navigate through the sections and interact with Login / Signup forms.
-
 Note: The Login/Signup forms are frontend-only and do not connect to a backend.
 
-📌 Demo
+##Demo
 
-Check out the live website here:
+Check out the live website here:https://antara-nikam.github.io/travel/
